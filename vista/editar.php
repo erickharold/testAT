@@ -51,25 +51,20 @@ require_once "../controller/AgenciaController.php";
             <label>Pais:</label>    
             <select name="pais">
                <?php
-               
                     foreach($paises as $item)
                     {
                         if ($item["Nombre"] == $persona["pais"])
                         {
-                            ?>
-                            
+                            ?>        
                                 <option value="<?= $persona["pais"]?>" selected><?= $persona["pais"]?></option>
-                         
                             <?php
                         }
                         else
                         {
                             ?>
-                                
                                 <option value="<?= $item["Nombre"]?>"><?= $item["Nombre"]?></option>
                             <?php
                         }
-                        
                     }
                ?>
                 </select>

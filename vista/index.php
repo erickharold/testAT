@@ -35,9 +35,7 @@ a {
             <button class="btn btn-success">
                 Crear nueva persona
             </button>
-        </a>
-        
-        
+        </a>        
         <table class="table table-responsive table-hover">
             <tr>
                 <th>ID</th>
@@ -71,9 +69,9 @@ a {
                         </button>
                     </a>
                     <a href="../api/ApiAgencia.php?apicall=deletePersona&id=<?=$fila["id"]?>" onclick="return confirm('¿Desea eliminar el dato?')">
-                    <button class="btn btn-sm btn-danger">
-                            Eliminar
-                    </button>
+                        <button class="btn btn-sm btn-danger">
+                                Eliminar
+                        </button>
                     </a>
                 </td>
             </tr>
