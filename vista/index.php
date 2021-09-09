@@ -1,7 +1,5 @@
 <?php
-
     require_once "../controller/AgenciaController.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 <STYLE>
 a {
@@ -20,9 +18,9 @@ a {
 }
 #centro{
     background-color: #fafafa;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
     text-align: center;
 }
 </STYLE>
@@ -49,7 +47,7 @@ a {
             <tr>
                 <td>
                     <?= $fila["id"] ?>
-                </td>a
+                </td>
                 <td>
                     <?= $fila["nombre"] ?>
                 </td>
