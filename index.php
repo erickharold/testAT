@@ -1,6 +1,6 @@
 <?php
 
-    require_once "../controller/AgenciaController.php";
+    require_once "controller/AgenciaController.php";
 
 ?>
 
