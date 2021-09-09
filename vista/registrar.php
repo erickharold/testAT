@@ -26,34 +26,31 @@
     <div id="centro">
     <h1>Ingresar Persona Agencia</h1>
 
-<form action="../api/ApiAgencia.php?apicall=createPersona" method="POST">
-    <label>Nombre:</label>    
-        <input type="text" name="nombre" placeholder="Nombre" required> 
-    <br>
-    <br>
-    <label>Apellido:</label>    
-        <input type="text" name="apellido" placeholder="Apellido" required> 
-    <br>
-    <br>
-    <label>Telefono:</label>    
-        <input type="text" name="telefono" placeholder="Telefono" required> 
-    <br>
-    <br>
-    <label>Pais:</label>    
-    <select name="pais" required>
-        <option value="" selected>--SELECCIONE--</option>
-        <option value="Peru">Peru</option>
-        <option value="Brasil" >Brasil</option>
-        <option value="Argentina">Argentina</option>
-    </select>
-    <br>
-    <br>
-        <input type="submit" value="Ingresar"> 
-</form>
+    <form action="../api/ApiAgencia.php?apicall=createPersona" method="POST">
+        <label>Nombre:</label>    
+            <input type="text" name="nombre" placeholder="Nombre" required> 
+        <br>
+        <br>
+        <label>Apellido:</label>    
+            <input type="text" name="apellido" placeholder="Apellido" required> 
+        <br>
+        <br>
+        <label>Telefono:</label>    
+            <input type="text" name="telefono" placeholder="Telefono" required> 
+        <br>
+        <br>
+        <label>Pais:</label>    
+        <select name="pais" required>
+            <option value="" selected>--SELECCIONE--</option>
+            <option value="Peru">Peru</option>
+            <option value="Brasil" >Brasil</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+        <br>
+        <br>
+            <input type="submit" value="Ingresar"> 
+    </form> 
     </div>
-    <center>
-        
-    </center>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
