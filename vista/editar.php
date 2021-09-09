@@ -73,11 +73,6 @@ require_once "../controller/AgenciaController.php";
                     }
                ?>
                 </select>
-                <!--<select name="pais" required>
-                    <option value="Peru">Peru</option>
-                    <option value="Brasil" >Brasil</option>
-                    <option value="Argentina">Argentina</option>
-                </select>-->
             <br>
             <br>
             <input type="submit" value="Editar">
