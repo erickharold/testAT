@@ -40,6 +40,17 @@ class Controller
         $respuesta = Datos::DeletePersonaModel($id, "persona");
         return $respuesta;
     }
+
+    public function ReadAllPaises()
+    {
+        $paises = array(
+            array("Nombre" => "Peru"),
+            array("Nombre" => "Brasil"),
+            array("Nombre" => "Argentina")
+        );
+
+        return $paises;
+    }
 }
 
 

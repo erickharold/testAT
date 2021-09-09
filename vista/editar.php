@@ -3,6 +3,8 @@
 require_once "../controller/AgenciaController.php";
 
     $persona = Controller::SearchPersonaByIdController($_GET['id']);
+
+    $paises = Controller::ReadAllPaises();
 ?>
 
 <!DOCTYPE html>
@@ -47,11 +49,35 @@ require_once "../controller/AgenciaController.php";
             <br>
             <br>
             <label>Pais:</label>    
-                <select name="pais" required>
+            <select name="pais">
+               <?php
+               
+                    foreach($paises as $item)
+                    {
+                        if ($item["Nombre"] == $persona["pais"])
+                        {
+                            ?>
+                            
+                                <option value="<?= $persona["pais"]?>" selected><?= $persona["pais"]?></option>
+                         
+                            <?php
+                        }
+                        else
+                        {
+                            ?>
+                                
+                                <option value="<?= $item["Nombre"]?>"><?= $item["Nombre"]?></option>
+                            <?php
+                        }
+                        
+                    }
+               ?>
+                </select>
+                <!--<select name="pais" required>
                     <option value="Peru">Peru</option>
                     <option value="Brasil" >Brasil</option>
                     <option value="Argentina">Argentina</option>
-                </select>
+                </select>-->
             <br>
             <br>
             <input type="submit" value="Editar">
